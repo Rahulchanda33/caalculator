@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://img.freepik.com/premium-vector/calculator-logo_10250-2602.jpg?w=826">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <!-- Top row for basic operations -->
+     <!-- Right column for advanced operations -->
+     <button class="btn math" onclick="appendToDisplay('sin(')">sin</button>
+     <button class="btn math" onclick="appendToDisplay('cos(')">cos</button>
+     <button class="btn math" onclick="appendToDisplay('tan(')">tan</button>
+     <button class="btn math" onclick="appendToDisplay('log(')">log</button>
+     <button class="btn math" onclick="appendToDisplay('ln(')">ln</button>
+     <button class="btn math" onclick="appendToDisplay('sqrt(')">√</button>
+     <button class="btn math" onclick="appendToDisplay('(')">(</button>
+     <button class="btn math" onclick="appendToDisplay(')')">)</button>
+    <button class="btn math" id="backspace" onclick="backspace()">←</button>
+    <button class="btn math" onclick="appendToDisplay('^')">^</button>
+    <button class="btn math" onclick="appendToDisplay('%')">%</button>
+    <button class="btn math" onclick="appendToDisplay('*')">×</button>
+    <button class="btn math" onclick="appendToDisplay('-')">-</button>
+    <button class="btn math" onclick="appendToDisplay('+')">+</button>
+    <button class="btn math" onclick="appendToDisplay('/')">/</button>
+    <button class="btn" onclick="appendToDisplay('.')">.</button>
+    <!-- Digit buttons -->
+    <button class="btn" onclick="appendToDisplay('9')">9</button>
+    <button class="btn" onclick="appendToDisplay('8')">8</button>
+    <button class="btn" onclick="appendToDisplay('7')">7</button>
+    <button class="btn" onclick="appendToDisplay('6')">6</button>
+    <button class="btn" onclick="appendToDisplay('5')">5</button>
+    <button class="btn" onclick="appendToDisplay('4')">4</button>
+    <button class="btn" onclick="appendToDisplay('3')">3</button>
+    <button class="btn" onclick="appendToDisplay('2')">2</button>
+    <button class="btn" onclick="appendToDisplay('1')">1</button>
+    <button class="btn" onclick="appendToDisplay('0')">0</button>
+    <button class="btn math" onclick="calculate()">=</button>
+    <button class="btn math" onclick="clearDisplay()">C</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
